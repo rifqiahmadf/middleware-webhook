@@ -26,7 +26,5 @@ COPY --from=builder /app/middleware-webhook .
 # Expose port
 EXPOSE 80
 
-RUN touch .env
-
 # Command to run the executable
 CMD ["./middleware-webhook"]
