@@ -5,7 +5,7 @@ provider "google" {
   region  = var.region
 }
 
-resource "google_cloud_run_service" "hello_world" {
+resource "google_cloud_run_service" "middleware-webhook" {
   name     = var.service_name
   location = var.region
 
@@ -31,11 +31,4 @@ resource "google_cloud_run_service" "hello_world" {
   }
 }
 
-resource "google_project_iam_binding" "run_invoker" {
-  project = var.project_id
-  role    = "roles/run.invoker"
 
-  members = [
-    "allUsers"
-  ]
-}

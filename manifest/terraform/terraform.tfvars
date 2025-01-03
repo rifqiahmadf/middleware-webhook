@@ -1,9 +1,9 @@
-project_id     = "glowing-service-444205-v1"
+project_id     = "your-gcp-project-id"
 region         = "us-central1"
-service_name   = "middleware-webhook"
-image          = "fitraelbi/middleware-webhook:latest"
+service_name   = "custom-service-name"
+image          = "custom-image"
 env_variables  = {
-  GITHUB_OWNER = "fitraelbi"
-  GITHUB_REPO     = "middleware-webhook"
-  GITHUB_TOKEN    = "custom-token"
+  GITHUB_OWNER = "custom-username"
+  name     = "custom-name"
+  token    = "custom-token"
 }
