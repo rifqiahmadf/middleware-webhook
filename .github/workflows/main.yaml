@@ -30,3 +30,5 @@ jobs:
           context: .        
           push: true
           builder: ${{ steps.buildx.outputs.name }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/middleware-webhook:latest
+
