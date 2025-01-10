@@ -1,18 +1,13 @@
 variable "project_id" {}
 variable "region" {
-  default = "us-central1"
+  default = "asia-southeast2"
 }
 variable "service_name" {
-  default = "hello-world-service"
+  default = "middleware-webhook"
 }
 variable "image" {
-  default = "test/hello-world"
+  default = "fitrakz/middleware-webhook:latest"
 }
 variable "env_variables" {
   type = map(string)
-  default = {
-    GITHUB_OWNER = "your-username"
-    GITHUB_REPO     = "your-name"
-    GITHUB_TOKEN    = "your-token"
-  }
 }
